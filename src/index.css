@@ -242,6 +242,12 @@ body {
   padding: 20px;
 }
 
+.layout-proyectos h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
 .subtitulo-proyectos {
   color: #888;
   margin-bottom: 40px;

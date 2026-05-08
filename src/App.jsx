@@ -9,7 +9,7 @@ function App() {
     <div className="contenedor">
       {/* --- BARRA DE NAVEGACIÓN --- */}
       <nav className="navbar">
-        <h2 className="logo">Mi Portfolio</h2>
+        <h2 className="logo">Portfolio</h2>
         <ul className="menu">
           <li 
             className={seccionActiva === 'inicio' ? 'activo' : ''} 
@@ -99,7 +99,7 @@ function App() {
       {seccionActiva === 'proyectos' && (
   <section className="seccion-pantalla-completa animacion-entrada">
     <div className="layout-proyectos">
-      <h2>Algunos de mis Proyectos</h2>
+      <h1>Algunos de mis Proyectos</h1>
       
       <div className="grid-proyectos-duo">
         
