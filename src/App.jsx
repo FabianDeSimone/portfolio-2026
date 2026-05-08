@@ -137,7 +137,7 @@ function App() {
           </p>
           <div className="card-footer">
             <a 
-              href="https://movie-app-TU-LINK.vercel.app" 
+              href="https://movie-app-react-zeta.vercel.app/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn-proyecto"
