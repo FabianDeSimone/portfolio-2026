@@ -69,7 +69,7 @@ function App() {
               
               <div className="educacion-cv">
                 <h3>Formación Académica</h3>
-                <p><strong>UAI</strong> | Ingeniería en Sistemas Informáticos (2do año)</p>
+                <p><strong>UAI</strong> | Ingeniería en Sistemas Informáticos (2do año actualmente)</p>
                 <p><strong>UCA</strong> | Ingeniería en Informática (Hasta 3er año completado)</p>
               </div>
             </div>
@@ -99,29 +99,52 @@ function App() {
       {seccionActiva === 'proyectos' && (
   <section className="seccion-pantalla-completa animacion-entrada">
     <div className="layout-proyectos">
-      <h2>Mis Proyectos</h2>
+      <h2>Algunos de mis Proyectos</h2>
       
-      <div className="grid-proyectos">
+      <div className="grid-proyectos-duo">
         
-        {/* Proyecto 1: Basado en tu experiencia Freelance */}
-        <div className="card-proyecto">
-          <h4>Desktop App .NET</h4>
-          <p>Desarrollo de aplicación de escritorio a medida con lógica de negocio compleja.</p>
-          <span className="tech-tag">C# .Net | SQL Server</span>
+        {/* CARD 1: REPOSITORIO GITHUB */}
+        <div className="card-proyecto-nueva">
+          <div className="card-header">
+            <span className="icon">📂</span>
+            <h4>Repositorio</h4>
+          </div>
+          <p>
+            Acá vas a encontrar implementaciones y challenges en <strong>C#</strong>, 
+            <strong>Visual Basic</strong> y <strong>React.js</strong>. 
+          </p>
+          <div className="card-footer">
+            <a 
+              href="https://github.com/FabianDeSimone" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn-proyecto"
+            >
+              Ver GitHub →
+            </a>
+          </div>
         </div>
 
-        {/* Proyecto 2: Basado en tu stack Web */}
-        <div className="card-proyecto">
-          <h4>Web Interface React</h4>
-          <p>Maquetación y desarrollo de componentes dinámicos y responsive.</p>
-          <span className="tech-tag">React.js | CSS3</span>
-        </div>
-
-        {/* Proyecto 3: Basado en tu manejo de datos */}
-        <div className="card-proyecto">
-          <h4>Sistema de Gestión DB</h4>
-          <p>Optimización y administración de bases de datos para extracción de información.</p>
-          <span className="tech-tag">SQL Server | SQLite</span>
+        {/* CARD 2: MOVIE TRACKER APP */}
+        <div className="card-proyecto-nueva">
+          <div className="card-header">
+            <span className="icon">🎬</span>
+            <h4>Movie Tracker App</h4>
+          </div>
+          <p>
+            Aplicación desarrollada en <strong>React + Vite</strong> que consume la API de TMDB. 
+            Incluye búsqueda dinámica, paginación y diseño responsive.
+          </p>
+          <div className="card-footer">
+            <a 
+              href="https://movie-app-TU-LINK.vercel.app" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn-proyecto"
+            >
+              Probar App →
+            </a>
+          </div>
         </div>
 
       </div>

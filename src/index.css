@@ -224,59 +224,10 @@ body {
   .navbar { padding: 20px 5%; }
 }
 
-/* --- SECCIÓN DE PROYECTOS (ESTILO GRILLA) --- */
-.layout-proyectos {
-  width: 100%;
-  max-width: 1200px;
-  text-align: center;
-}
 
-.layout-proyectos h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #fff;
-}
 
-.grid-proyectos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 20px;
-}
 
-/* Tarjetas de Proyectos */
-.card-proyecto {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 40px 30px;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 250px;
-  cursor: pointer;
-}
 
-.card-proyecto:hover {
-  background: rgba(100, 108, 255, 0.08);
-  border-color: #646cff;
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-}
-
-.card-proyecto h4 {
-  font-size: 1.4rem;
-  color: #fff;
-  margin-bottom: 15px;
-}
-
-.card-proyecto p {
-  color: #888;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
 
 .tech-tag {
   margin-top: 20px;
@@ -284,4 +235,82 @@ body {
   font-weight: bold;
   color: #646cff;
   text-transform: uppercase;
+}
+
+.layout-proyectos {
+  text-align: center;
+  padding: 20px;
+}
+
+.subtitulo-proyectos {
+  color: #888;
+  margin-bottom: 40px;
+}
+
+
+.grid-proyectos-duo {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap; 
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card-proyecto-nueva {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 35px;
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.card-proyecto-nueva:hover {
+  transform: translateY(-10px);
+  border-color: #646cff;
+  background: rgba(100, 108, 255, 0.05);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card-header .icon {
+  font-size: 2rem;
+}
+
+.card-header h4 {
+  font-size: 1.4rem;
+  color: #646cff;
+}
+
+.card-proyecto-nueva p {
+  line-height: 1.6;
+  color: #ccc;
+  flex-grow: 1; /* Esto hace que el botón siempre quede abajo alineado */
+  margin-bottom: 25px;
+}
+
+.btn-proyecto {
+  text-decoration: none;
+  background: #646cff;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 100px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.btn-proyecto:hover {
+  background: #747bff;
 }
